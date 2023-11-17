@@ -1,0 +1,880 @@
+{% extends 'consulting/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+    <div class="banner-area bg_image--1 bg_image rts-section-gap">
+        <div class="container shape-line">
+            <div class="row align-items-start pt--100 pt_sm--50 banner-shape-red">
+                <div class="col-lg-6 order-xl-1 order-md-2 order-sm-1 order-1">
+                    <div class="banner-one-content-wrapper">
+                        <span class="pre-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Выбирайте лучшее</span>
+                        <h1 class="title-banner" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                            Лучшее решение для вашего бизнеса
+                        </h1>
+                        <p class="banner-disc" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            Мы убеждены, что обладаем всем необходимым для эффективного взаимовыгодного сотрудничества и будем рады стать Вашими партнерами!
+                        </p>
+                        <div class="banner-wrapper button" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                            <a href="{% url 'consulting:service' %}" class="rts-btn btn-primary">Выбрать</a>
+
+<!--                            <a href="https://www.youtube.com/embed/KwpA_CvmWV0" class="btn-watch-video fancybox fancybox.iframe ml&#45;&#45;25">-->
+<!--                                <span class="icon"></span>-->
+<!--                                <span class="text">Play Video</span>-->
+<!--                            </a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-xl-2">
+                    <div class="banner-shape-area-one">
+                        <img src="{% static 'assets/images/banner/shape/01.png' %}" alt="banner_shape" data-sal-delay="200" data-sal="zoom-in" data-sal-duration="1000">
+                    </div>
+                    <div class="banner-thumb-1 banner-shape-one">
+                        <img src="{% static 'assets/images/img-1.png' %}" alt="Creative_banner" data-sal-delay="200" data-sal="zoom-in" data-sal-duration="1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our working process area start -->
+    <div class="rts-working-process-area rts-section-gap">
+        <div class="container">
+            <div class="row mb--30">
+                <div class="col-12">
+                    <div class="title-area text-center">
+                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Этапы работы</span>
+                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Рабочие процессы</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+<!--                            <img class="logo" src="assets/images/working-process/logo/01.svg" alt="process-logo">-->
+                            <h5 class="title">
+                                #1 <br>Подготовка
+                            </h5>
+                            <p class="disc">
+                                Аудитор получает информацию о деятельности потенциального заказчика.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+<!--                            <img class="logo" src="assets/images/working-process/logo/02.svg" alt="process-logo">-->
+                            <h5 class="title">
+                                #2 Планирование
+                            </h5>
+                            <p class="disc">
+                                Составляется график проведения проверки, формируется состав специалистов, входящих в аудиторскую группу.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+<!--                            <img class="logo" src="assets/images/working-process/logo/03.svg" alt="process-logo">-->
+                            <h5 class="title">
+                                #3 <br>Проведение аудита
+                            </h5>
+                            <p class="disc">
+                                Сбор и анализ аудиторских доказательств, касающихся деятельности аудируемой компании.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-working-process-one">
+                        <div class="inner text-center" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+<!--                            <img class="logo" src="assets/images/working-process/logo/04.svg" alt="process-logo">-->
+                            <h5 class="title">
+                                #4 <br>Аудиторское заключение
+                            </h5>
+                            <p class="disc">
+                                Выдача аудиторского заключения о степени достоверности бухгалтерской отчетности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our working process area end -->
+
+    <!-- counter up area start -->
+<div class="counter-up-area ptb--100 counter-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="counter-up-wrapper-one">
+                        <!-- Single counter -->
+                        <div class="counter-single sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <h2 class="title" style="text-align: justify; white-space: nowrap;"><span>20+</span></h2>
+                            <p class="disc blue" style="white-space: nowrap;">Лет на рынке</p>
+                        </div>
+                        <div class="counter-single sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <h5 class="title"><span style="color:white; font-size: 18px; white-space: nowrap;">Кинокомпании</span></h5>
+                        </div>
+                        <!-- Single counter End -->
+                        <!-- Single counter -->
+                        <div class="counter-single sal-animate" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            <h5 class="title"><span style="color:white; font-size: 18px; white-space: nowrap;">Строительно-монтажные <span style="white-space: normal;">компании</span></span></h5>
+                        </div>
+                        <!-- Single counter End -->
+                        <!-- Single counter -->
+                        <div class="counter-single sal-animate" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                            <h5 class="title"><span style="color:white; font-size: 18px; white-space: nowrap;">Торгово-закупочные <span style="white-space: normal;">компании</span></span></h5>
+                        </div>
+                         <div class="counter-single sal-animate" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                            <h5 class="title"><span style="color:white; font-size: 18px;"><span style="white-space: nowrap;">Производственные</span> <span style="white-space: normal;">компании</span></span></h5>
+                        </div>
+                        <!-- Single counter End -->
+                        <!-- Single counter -->
+                        <div class="counter-single sal-animate" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+                            <h5 class="title"><span style="color:white; font-size: 18px; white-space: nowrap;">Сфера услуг</span></h5>
+                        </div>
+                        <!-- Single counter End -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- counter up area End -->
+
+    <!-- about us area start -->
+    <div class="rts-about-us-area rts-section-gap">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="thumbnail" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <img src="{% static 'assets/images/image-2.jpg' %}" alt="creative_about">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-right-one-area">
+                        <div class="title-area">
+                            <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">О компании</span>
+                            <h3 class="title" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                                Информация о фирме
+                            </h3>
+                        </div>
+                        <p class="disc" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            ООО «Аудиторско-консалтинговая фирма АКАДЕМ-АУДИТ» была создана в 2003г. В этом году компания отмечает свой 20-летний юбилей!
+                        </p>
+                        <p class="disc" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                            Наша аудиторская фирма имеет высокий интеллектуальный потенциал, т.к. основная часть наших сотрудников - это творчески мыслящие, имеющие широкий кругозор специалисты. Все специалисты имеют большой опыт в научно-педагогических организациях, аудиторских компаниях и в сфере бухгалтерского и налогового учета. Специализация работников подтверждена аттестатами СРО «Аудиторская Ассоциация Содружество», аттестатами ЦАЛАК Минфина РФ, аттестатами профессиональных бухгалтеров Института Профбухгалтеров РФ и аттестатами налоговых консультантов.
+                        </p>
+                        <div class="button-area" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                            <a href="{% url 'consulting:about' %}" class="rts-btn btn-primary">Больше о нас</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about us area end -->
+
+    {% include 'consulting/clients.html' %}
+
+
+    <!-- service-appoinment-area start -->
+    <div class="rts-service-area bg-light rts-section-gap service-bg_shape">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-area text-center">
+                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Услуги</span>
+                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Предоставляемые нами услуги</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-24 mt--5">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="assets/images/service/01.svg" alt="">
+                        </div>
+                        <a href="https://akfakademaudit.com/service/#audit1">
+                            <h5 class="title">
+                                Обязательный аудит
+                            </h5>
+                        </a>
+
+                        <a href="https://akfakademaudit.com/service/#audit1" class="rts-read-more">Узнать больше<i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="assets/images/service/02.svg" alt="">
+                        </div>
+                        <a href="https://akfakademaudit.com/service/#audit2">
+                            <h5 class="title">
+                                Инициативный аудит
+                            </h5>
+                        </a>
+
+                        <a href="https://akfakademaudit.com/service/#audit2" class="rts-read-more">Узнать больше<i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="assets/images/service/03.svg" alt="">
+                        </div>
+                        <a href="https://akfakademaudit.com/service/#audit3">
+                            <h5 class="title">
+                                Кадровый аудит
+                            </h5>
+                        </a>
+                        <a href="https://akfakademaudit.com/service/#audit3" class="rts-read-more">Узнать больше<i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="assets/images/service/04.svg" alt="">
+                        </div>
+                        <a href="https://akfakademaudit.com/service/#audit4">
+                            <h5 class="title">
+                                Налоговый аудит
+                            </h5>
+                        </a>
+
+                        <a href="https://akfakademaudit.com/service/#audit4" class="rts-read-more">Узнать больше<i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="assets/images/service/05.svg" alt="">
+                        </div>
+                        <a href="https://akfakademaudit.com/service/#audit5">
+                            <h5 class="title">
+                                Аудит системы внутреннего контроля
+                            </h5>
+                        </a>
+                        <a href="https://akfakademaudit.com/service/#audit5" class="rts-read-more">Узнать больше<i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="assets/images/service/06.svg" alt="">
+                        </div>
+                        <a href="https://akfakademaudit.com/service/#audit6">
+                            <h5 class="title">
+                                Экспресс-аудит
+                            </h5>
+                        </a>
+
+                      <a href="https://akfakademaudit.com/service/#audit6" class="rts-read-more">Узнать больше<i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                    <!-- single service area start -->
+                    <div class="rts-single-service-one">
+                        <div class="icon">
+                            <img src="assets/images/service/07.svg" alt="">
+                        </div>
+                        <a href="#form">
+                            <h5 class="title">
+                                Консалтинг
+                            </h5>
+                        </a>
+
+                        <a href="#form" class="rts-read-more">Оставить заявку<i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                    <!-- single service area end -->
+                </div>
+
+            </div>
+            <!-- tart Customer feedback area -->
+<!--            <div class="rts-testimonial-area-one">-->
+<!--                <div class="bg-light-testimonial">-->
+<!--                    <div class="container">-->
+<!--                        <div class="row mb&#45;&#45;30">-->
+<!--                            <div class="col-12">-->
+<!--                                <div class="title-area-testi">-->
+<!--                                    <div class="title-area text-start">-->
+<!--                                <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Отзывы</span>-->
+<!--                                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">-->
+<!--                                            Отзывы наших клиентов</h3>-->
+<!--                                    </div>-->
+<!--                                    <div class="swiper-button-wrapper">-->
+<!--                                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>-->
+<!--                                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-12">-->
+<!--                                <div class="slide-div">-->
+<!--                                    &lt;!&ndash; Swiper &ndash;&gt;-->
+<!--                                    <div class="swiper testimonial-1">-->
+<!--                                        <div class="swiper-wrapper">-->
+<!--                                            <div class="swiper-slide">-->
+<!--                                                <div class="single-testimonial-one">-->
+<!--                                                    <div class="header-area">-->
+<!--                                                        <img src="assets/images/testimonials/01.png" alt="testimonials">-->
+<!--                                                        <div class="name-desig">-->
+<!--                                                            <a href="#">-->
+<!--                                                                <h6>Jasmine Lemon</h6>-->
+<!--                                                            </a>-->
+<!--                                                            <p>Manager at <span>Apple</span></p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="body">-->
+<!--                                                        <p class="disc">-->
+<!--                                                            ”Quam conubia venenatis nullam nisi bibendum posuere ligula urna. Netus partent-->
+<!--                                                            morbi convallis cum habitasse mauris arcu taciti magna orci primis”-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="footer">-->
+<!--                                                        <div class="stars-area">-->
+<!--                                                            <ul>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                            </ul>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="logo">-->
+<!--                                                            <img src="assets/images/testimonials/logo/01.png" alt="Testimonial-Logo">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide">-->
+<!--                                                <div class="single-testimonial-one">-->
+<!--                                                    <div class="header-area">-->
+<!--                                                        <img src="assets/images/testimonials/02.png" alt="testimonials">-->
+<!--                                                        <div class="name-desig">-->
+<!--                                                            <a href="#">-->
+<!--                                                                <h6>Jone Lee</h6>-->
+<!--                                                            </a>-->
+<!--                                                            <p>Manager at <span>Samsung</span></p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="body">-->
+<!--                                                        <p class="disc">-->
+<!--                                                            ”Quam conubia venenatis nullam nisi bibendum posuere ligula urna. Netus partent-->
+<!--                                                            morbi convallis cum habitasse mauris arcu taciti magna orci primis”-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="footer">-->
+<!--                                                        <div class="stars-area">-->
+<!--                                                            <ul>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                            </ul>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="logo">-->
+<!--                                                            <img src="assets/images/testimonials/logo/01.png" alt="Testimonial-Logo">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide">-->
+<!--                                                <div class="single-testimonial-one">-->
+<!--                                                    <div class="header-area">-->
+<!--                                                        <img src="assets/images/testimonials/03.png" alt="testimonials">-->
+<!--                                                        <div class="name-desig">-->
+<!--                                                            <a href="#">-->
+<!--                                                                <h6>Jasmine Lemon</h6>-->
+<!--                                                            </a>-->
+<!--                                                            <p>Manager at <span>Apple</span></p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="body">-->
+<!--                                                        <p class="disc">-->
+<!--                                                            ”Quam conubia venenatis nullam nisi bibendum posuere ligula urna. Netus partent-->
+<!--                                                            morbi convallis cum habitasse mauris arcu taciti magna orci primis”-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="footer">-->
+<!--                                                        <div class="stars-area">-->
+<!--                                                            <ul>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                            </ul>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="logo">-->
+<!--                                                            <img src="assets/images/testimonials/logo/01.png" alt="Testimonial-Logo">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide">-->
+<!--                                                <div class="single-testimonial-one">-->
+<!--                                                    <div class="header-area">-->
+<!--                                                        <img src="assets/images/testimonials/01.png" alt="testimonials">-->
+<!--                                                        <div class="name-desig">-->
+<!--                                                            <a href="#">-->
+<!--                                                                <h6>Cronic Lemon</h6>-->
+<!--                                                            </a>-->
+<!--                                                            <p>Manager at <span>Apple</span></p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="body">-->
+<!--                                                        <p class="disc">-->
+<!--                                                            ”Quam conubia venenatis nullam nisi bibendum posuere ligula urna. Netus partent-->
+<!--                                                            morbi convallis cum habitasse mauris arcu taciti magna orci primis”-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="footer">-->
+<!--                                                        <div class="stars-area">-->
+<!--                                                            <ul>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                            </ul>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="logo">-->
+<!--                                                            <img src="assets/images/testimonials/logo/01.png" alt="Testimonial-Logo">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide">-->
+<!--                                                <div class="single-testimonial-one">-->
+<!--                                                    <div class="header-area">-->
+<!--                                                        <img src="assets/images/testimonials/01.png" alt="testimonials">-->
+<!--                                                        <div class="name-desig">-->
+<!--                                                            <a href="#">-->
+<!--                                                                <h6>Vanis Lemon</h6>-->
+<!--                                                            </a>-->
+<!--                                                            <p>CEO at <span>Apple</span></p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="body">-->
+<!--                                                        <p class="disc">-->
+<!--                                                            ”Quam conubia venenatis nullam nisi bibendum posuere ligula urna. Netus partent-->
+<!--                                                            morbi convallis cum habitasse mauris arcu taciti magna orci primis”-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="footer">-->
+<!--                                                        <div class="stars-area">-->
+<!--                                                            <ul>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                            </ul>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="logo">-->
+<!--                                                            <img src="assets/images/testimonials/logo/01.png" alt="Testimonial-Logo">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide">-->
+<!--                                                <div class="single-testimonial-one">-->
+<!--                                                    <div class="header-area">-->
+<!--                                                        <img src="assets/images/testimonials/01.png" alt="testimonials">-->
+<!--                                                        <div class="name-desig">-->
+<!--                                                            <a href="#">-->
+<!--                                                                <h6>Jasmine Lemon</h6>-->
+<!--                                                            </a>-->
+<!--                                                            <p>Manager at <span>Apple</span></p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="body">-->
+<!--                                                        <p class="disc">-->
+<!--                                                            ”Quam conubia venenatis nullam nisi bibendum posuere ligula urna. Netus partent-->
+<!--                                                            morbi convallis cum habitasse mauris arcu taciti magna orci primis”-->
+<!--                                                        </p>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="footer">-->
+<!--                                                        <div class="stars-area">-->
+<!--                                                            <ul>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                                <li><a href="#"><i class="fas fa-star"></i></a></li>-->
+<!--                                                            </ul>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="logo">-->
+<!--                                                            <img src="assets/images/testimonials/logo/01.png" alt="Testimonial-Logo">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; swiper end &ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- tart Customer feedback area End -->
+            <div style="display:none;"></div>
+            <div class="row" id="form">
+                <div class="col-12">
+                    <div class="appoinment-area-one mt--120 mt_sm--60">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- appoinment left area -->
+                                <div class="appoinment-left">
+                                    <div class="title-area">
+                                        <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                            Ваши обращения
+                                        </span>
+                                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                                            Оставьте свою заявку
+                                        </h3>
+                                        <p class="disc" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                                            Мы гарантируем профессионализм в работе, индивидуальный подход к каждому клиенту, строгую конфиденциальность полученной информации, неукоснительное
+                                            соблюдение профессиональных и этических стандартов, принятых в области аудита и консалтинга.
+                                        </p>
+                                        <div class="communicate-area" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+                                            <img src="{% static 'assets/images/appoinment/icon/01.svg' %}" alt="creative_icon">
+                                            <div class="details-area">
+                                                <a href="#">info@akfakademaudit.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="communicate-area mt--30" data-sal-delay="550" data-sal="slide-up" data-sal-duration="800">
+                                            <img src="{% static 'assets/images/appoinment/icon/02.svg' %}" alt="creative_icon">
+                                            <div class="details-area">
+                                                <a href="#">8 (495) 504-86-40</a><br>
+                                                <a href="#">8 (903) 281-04-20</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- appoinment left area End -->
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- appoinment-right -->
+                                <div class="appoinment-right">
+                                    <form action="{% url 'consulting:index' %}" method="post" id="if">
+                                        {% csrf_token %}
+                                        <div class="single-input" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                            <label for="{{ if.name.id_for_label }}">Ваше имя*</label>
+<!--                                            <input type="text" id="name" required>-->
+                                            {{ if.name }}
+                                        </div>
+                                        <div class="single-input mt--20" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                                            <label for="{{ if.email.id_for_label }}">Ваш email*</label>
+<!--                                            <input type="text" id="Email" required>-->
+                                            {{ if.email }}
+                                        </div>
+                                        <div class="single-input mt--20" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                                            <label for="{{ if.text.id_for_label }}">Ваше сообщение*</label>
+<!--                                            <textarea id="message"></textarea>-->
+                                            {{ if.text }}
+                                        </div>
+                                        <button class="rts-btn btn-primary mt--30" type="submit" form="if">Отправить</button>
+                                    </form>
+                                </div>
+                                <!-- appoinment-right End -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appoinment-shape">
+                        <img class="shape-1 shape" src="{% static 'assets/images/appoinment/shape/01.png' %}" alt="appoinmtnt_shape" data-sal-delay="250" data-sal="slide-right" data-sal-duration="600">
+                        <img class="shape shape-2" src="{% static 'assets/images/appoinment/shape/02.png' %}" alt="appoinmtnt_shape" data-sal-delay="150" data-sal="slide-right" data-sal-duration="800">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service-appoinment-area End -->
+
+
+    <!-- rts-case studies area start -->
+<!--    <div class="rts-project-area-one rts-section-gap bg_dark">-->
+<!--        <div class="container">-->
+<!--            <div class="row mb&#45;&#45;30">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="title-area-product">-->
+<!--                        <div class="title-area text-start">-->
+<!--                            <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Projects We-->
+<!--                                Have</span>-->
+<!--                            <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Our Case-->
+<!--                                Studies</h3>-->
+<!--                        </div>-->
+<!--                        <ul class="nav nav-tabs product-tab-button-area" id="myTab" role="tablist">-->
+<!--                            <li class="nav-item" role="presentation">-->
+<!--                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">All</button>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item" role="presentation">-->
+<!--                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Graphic-->
+<!--                                    Design</button>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item" role="presentation">-->
+<!--                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Motion-->
+<!--                                    Design</button>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="shape-image-product">-->
+<!--                        <img src="assets/images/product/shape/01.png" alt="Image_shape" data-sal-delay="350" data-sal="slide-right" data-sal-duration="800">-->
+<!--                    </div>-->
+<!--                    <div class="tab-content" id="myTabContent">-->
+<!--                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">-->
+<!--                            &lt;!&ndash; ingle-tab start &ndash;&gt;-->
+<!--                            <div class="row g-6">-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/01.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Online Business & Design Solution-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/02.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Business & Design Solution Online-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/03.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Solution Online Business & Design-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/04.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Business Online & Design Solution-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; ingle-tab end &ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">-->
+<!--                            &lt;!&ndash; ingle-tab start &ndash;&gt;-->
+<!--                            <div class="row g-6">-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/02.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Online Business & Design Solution-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/01.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Business & Design Solution Online-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/03.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Solution Online Business & Design-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/04.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Business Online & Design Solution-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; ingle-tab end &ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">-->
+<!--                            &lt;!&ndash; ingle-tab start &ndash;&gt;-->
+<!--                            <div class="row g-6">-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/03.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Online Business & Design Solution-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/04.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Business & Design Solution Online-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/02.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Solution Online Business & Design-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    &lt;!&ndash; single -product &ndash;&gt;-->
+<!--                                    <div class="single-product-one">-->
+<!--                                        <a class="thumbnail" href="useless/project-details.html"><img src="assets/images/product/01.jpg" alt="Propduct_images"></a>-->
+<!--                                        <div class="inner-content">-->
+<!--                                            <span>Design Build</span>-->
+<!--                                            <a href="useless/project-details.html">-->
+<!--                                                <h4 class="title">-->
+<!--                                                    Business Online & Design Solution-->
+<!--                                                </h4>-->
+<!--                                            </a>-->
+<!--                                            <a href="useless/project-details.html" class="rts-read-more">Learn More<i-->
+<!--                                                    class="far fa-chevron-double-right"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; single -product End&ndash;&gt;-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; ingle-tab end &ndash;&gt;-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- rts-case studies area end -->
+{% endblock %}

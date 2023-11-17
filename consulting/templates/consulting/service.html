@@ -1,0 +1,639 @@
+{% extends 'consulting/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- start breadcrumb area -->
+<div class="rts-breadcrumb-area breadcrumb-bg bg_image">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                <h1 class="title" style="font-size: 60px;" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Наши услуги</h1>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="bread-tag">
+                    <a href="{% url 'consulting:index' %}" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Домой</a>
+                    <span> / </span>
+                    <a href="#" class="active" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">Услуги</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end breadcrumb area -->
+
+<!-- service-appoinment-area start -->
+<!--<div class="rts-service-area bg-light rts-section-gap service-bg_shape service-inner">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-12">-->
+<!--                <div class="title-area text-center">-->
+<!--                    <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Услуги</span>-->
+<!--                    <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Предоставляемые нами услуги</h3>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row g-24 mt&#45;&#45;5">-->
+<!--            <div class="col-lg-4" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">-->
+<!--                &lt;!&ndash; single service area start &ndash;&gt;-->
+<!--                <div class="rts-single-service-one">-->
+<!--                    <div class="icon">-->
+<!--                        <img src="assets/images/service/01.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <a href="#audit1">-->
+<!--                        <h5 class="title">-->
+<!--                            Обязательный аудит-->
+<!--                        </h5>-->
+<!--                    </a>-->
+<!--                    <p class="disc">-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--                    </p>-->
+<!--                    <a href="#audit1" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single service area end &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="col-lg-4" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">-->
+<!--                &lt;!&ndash; single service area start &ndash;&gt;-->
+<!--                <div class="rts-single-service-one">-->
+<!--                    <div class="icon">-->
+<!--                        <img src="assets/images/service/02.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <a href="#audit2">-->
+<!--                        <h5 class="title">-->
+<!--                            Инициативный аудит-->
+<!--                        </h5>-->
+<!--                    </a>-->
+<!--                    <p class="disc">-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--                    </p>-->
+<!--                    <a href="#audit2" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single service area end &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="col-lg-4" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">-->
+<!--                &lt;!&ndash; single service area start &ndash;&gt;-->
+<!--                <div class="rts-single-service-one">-->
+<!--                    <div class="icon">-->
+<!--                        <img src="assets/images/service/03.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <a href="#audit3">-->
+<!--                        <h5 class="title">-->
+<!--                            Эксперт-аудит-->
+<!--                        </h5>-->
+<!--                    </a>-->
+<!--                    <p class="disc">-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--                    </p>-->
+<!--                    <a href="#audit3" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single service area end &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="col-lg-4" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">-->
+<!--                &lt;!&ndash; single service area start &ndash;&gt;-->
+<!--                <div class="rts-single-service-one">-->
+<!--                    <div class="icon">-->
+<!--                        <img src="assets/images/service/04.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <a href="#audit4">-->
+<!--                        <h5 class="title">-->
+<!--                            Налоговый аудит-->
+<!--                        </h5>-->
+<!--                    </a>-->
+<!--                    <p class="disc">-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--                    </p>-->
+<!--                    <a href="#audit4" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single service area end &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="col-lg-4" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">-->
+<!--                &lt;!&ndash; single service area start &ndash;&gt;-->
+<!--                <div class="rts-single-service-one">-->
+<!--                    <div class="icon">-->
+<!--                        <img src="assets/images/service/05.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <a href="#audit5">-->
+<!--                        <h5 class="title">-->
+<!--                            Аудит СВК-->
+<!--                        </h5>-->
+<!--                    </a>-->
+<!--                    <p class="disc">-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--                    </p>-->
+<!--                    <a href="#audit5" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single service area end &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="col-lg-4" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">-->
+<!--                &lt;!&ndash; single service area start &ndash;&gt;-->
+<!--                <div class="rts-single-service-one">-->
+<!--                    <div class="icon">-->
+<!--                        <img src="assets/images/service/06.svg" alt="">-->
+<!--                    </div>-->
+<!--                    <a href="#audit6">-->
+<!--                        <h5 class="title">-->
+<!--                             Кадровый аудит-->
+<!--                        </h5>-->
+<!--                    </a>-->
+<!--                    <p class="disc">-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--                    </p>-->
+<!--                    <a href="#audit6" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single service area end &ndash;&gt;-->
+<!--            </div>-->
+<!--&lt;!&ndash;            <div class="col-lg-3" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">&ndash;&gt;-->
+<!--&lt;!&ndash;                &lt;!&ndash; single service area start &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="rts-single-service-one">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/images/service/07.svg" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h5 class="title">&ndash;&gt;-->
+<!--&lt;!&ndash;                            Content strategy&ndash;&gt;-->
+<!--&lt;!&ndash;                        </h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="disc">&ndash;&gt;-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                &lt;!&ndash; single service area end &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-lg-3" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">&ndash;&gt;-->
+<!--&lt;!&ndash;                &lt;!&ndash; single service area start &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="rts-single-service-one">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/images/service/08.svg" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h5 class="title">&ndash;&gt;-->
+<!--&lt;!&ndash;                            Product Design&ndash;&gt;-->
+<!--&lt;!&ndash;                        </h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="disc">&ndash;&gt;-->
+<!--&lt;!&ndash;                        Nisullam congue rhoncus risus dapibus habitant mauris eget ante pharetra.&ndash;&gt;-->
+<!--&lt;!&ndash;                    </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#" class="rts-read-more">Learn More<i class="far fa-chevron-double-right"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                &lt;!&ndash; single service area end &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--        </div>-->
+    </div>
+</div>
+<!-- service-appoinment-area End -->
+
+<!-- start call to action area -->
+<div class="rts-callto-acation-area rts-callto-acation-area4 bg-call-to-action-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="cta-two-wrapper" >
+                    <div class="title-area" style="margin-left: -20px; margin-right:20px;">
+                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Акции<br></h3>
+                        <p style="font-size: 25px; color: white;">Скидка в рамках осеннего <br>заказа аудита за 2023 год</p>
+                    </div>
+                    <div class="cta-contact-box" style="margin-top: 30px;">
+                        <div class="left-side">
+                            <p data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Почта</p>
+                            <a href="#" class="email" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"> info@akfakademaudit.com</a>
+                        </div>
+                        <div class="right-side">
+                            <p data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Телефон</p>
+                            <a href="#" class="phone" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">8(495)504-86-40</a>
+                        </div>
+                    </div>
+                    <div class="title-area" style="margin-left:40px; margin-top:20px;">
+                        <h3 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Скидка<br></h3>
+                        <p style="font-size: 25px; color: white;">При проверке группы компаний</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end call to action area -->
+
+<!-- rts pricing area start -->
+<div class="pricing-area-h2 rts-section-gap">
+    <div class="container">
+        <div class="row mb--30">
+            <div class="col-12">
+                <div class="title-area text-center">
+                    <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Стоимость услуг</span>
+                    <h2 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Выберите свой лучший вариант</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row g-24">
+            <div class="col-lg-4" id="audit2">
+                <!-- single pricing start -->
+                 <div class="single-pricing-area-h2" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                    <div class="pricing-head">
+                        <h5 class="title">
+                            Инициативный аудит
+                        </h5>
+                    </div>
+                    <div class="pricing-body">
+                        <h3 class="title">
+                            От 190 000<span style="font-size:33px; margin-left:5px;">₽</span>
+                        </h3>
+                        <p class="disc">
+                            <!--                                Sodales curae dictum nisi duis purus sapien cum facilisi odio-->
+                        </p>
+                        Оценка и анализ
+                        <div class="feature-area">
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>бухгалтерской, финансовой и налоговой документации</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>договоров, первичных и платежных документов</span>
+                            </div>
+                            <div class="single-feature" style="display: block;">
+                                <i class="fas fa-check-circle"></i>
+                                <span id="expandable-text-2">материалов по ранее проводившимся проверкам ФНС и аудитов
+                                    <i id="arrow-icon-2" class="fas fa-chevron-down"></i></span>
+                                <div id="expandable-content-2" style="display: none;">
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>учетной политики, систем внутреннего контроля предприятия</span>
+                                    </div>
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>ведения налогового учета, оформления отчетов, расчетов, деклараций</span>
+                                    </div>
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>кассовых операций</span>
+                                    </div>
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>расчетов по обязательным платежам с бюджетом, контрагентами, банками</span>
+                                    </div>
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>налоговых резервов</span>
+                                    </div>
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>активов, материальных ценностей, ресурсов</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                            <a class="rts-btn btn-secondary" href="#">Get Started</a>-->
+                    </div>
+                </div>
+
+                <!-- single pricing end -->
+                </div>
+            <div class="col-lg-4" id="audit1">
+                <!-- single pricing start -->
+                <div class="single-pricing-area-h2 standared" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="pricing-head">
+                        <h5 class="title">
+                            Обязательный аудит
+                        </h5>
+                    </div>
+                    <div class="pricing-body">
+                        <h3 class="title">
+                            От 230 000<span style="font-size:33px; margin-left:5px;">₽</span>
+                        </h3>
+                        <p class="disc">
+                            <!--                            Итоговая стоимость услуги обязательного аудита зависит от объёма работ.-->
+                        </p>
+                        <div class="feature-area">
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Сбор аудиторских доказательств</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Анализ первичной документации и отчетности компании</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Выявление ошибок</span>
+                            </div>
+                            <div class="single-feature" style="display: block;">
+                                <i class="fas fa-check-circle"></i>
+                                <span id="expandable-text-1">Формирование предварительных данных для аудиторского заключения
+                                    <i id="arrow-icon-1" class="fas fa-chevron-down"></i></span>
+                                <div id="expandable-content-1" style="display: none;">
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Подготовка выводов</span>
+                                    </div>
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Выдача аудиторского заключения</span>
+                                    </div>
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Индивидуальные практические рекомендации</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="rts-btn btn-secondary" href="#">Get Started</a> -->
+                    </div>
+                </div>
+                <!-- single pricing end -->
+            </div>
+            <div class="col-lg-4" id="audit3">
+                <!-- single pricing start -->
+                <div class="single-pricing-area-h2" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                    <div class="pricing-head">
+                        <h5 class="title">
+                            Экспресс-аудит
+                        </h5>
+                    </div>
+                    <div class="pricing-body">
+                        <h3 class="title">
+                            От 160 000<span style="font-size:33px; margin-left:5px;">₽</span>
+                        </h3>
+                        <p class="disc">
+                            <!--                                Sodales curae dictum nisi duis purus sapien cum facilisi odio-->
+                        </p>
+                        <div class="feature-area">
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Анализ состояния бухгалтерского учета компании</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Выявление типовых ошибок и проблем в бухгалтерском учете, негативно влияющих на бизнес клиента</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Оценка состояния налогового учета предприятия</span>
+                            </div>
+                            <div class="expandable-content" style="display: none;">
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Расчет отдельных видов налоговых обязательств на основании данных от клиента</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Схема решения основных проблем бухгалтерского и налогового учета</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Проверка отражения в налоговом и бухучете крупных сделок и нетипичных операций</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Экспертиза финансовой ситуации на предприятии</span>
+                                </div>
+                            </div>
+                            <!--                            <a class="rts-btn btn-secondary" href="#">Get Started</a>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single pricing end -->
+            </div>
+            <div class="col-lg-4" id="audit4">
+                <!-- single pricing start -->
+                <div class="single-pricing-area-h2" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="pricing-head">
+                        <h5 class="title">
+                            Налоговый аудит
+                        </h5>
+                    </div>
+                    <div class="pricing-body">
+                        <h3 class="title">
+                            От 250 000 <span style="font-size:33px; margin-left:5px;">₽</span>
+                        </h3>
+                        <p class="disc">
+                            <!--                                Сбор аудиторских доказательств-->
+                        </p>
+                        <div class="feature-area">
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Сбор аудиторских доказательств</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Правильность формирования налогооблагаемой базы по конкретному налоговому обязательству или виду налога</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Проверка своевременности уплаты налогов</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Минимизация налоговых рисков и вероятности возникновения конфликтов с государственными органами<i class="arrow-icon" class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="expandable-content" style="display: none;">
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Оптимизация системы налогообложения</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Снижение материальных потерь в результате штрафов и пеней</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Проверки состояния расчетов с бюджетом</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Состояния налоговых обязательств</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Правомерность использования налоговых льгот</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Оценки налоговых рисков организации</span>
+                                </div>
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Проверка соответствия системы налогового учета и документации действующему законодательству</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                            <a class="rts-btn btn-secondary" href="#">Get Started</a>-->
+                    </div>
+                </div>
+                <!-- single pricing end -->
+            </div>
+            <div class="col-lg-4" id="audit5">
+                <!-- single pricing start -->
+                <div class="single-pricing-area-h2 standared" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                    <div class="pricing-head">
+                        <h5 class="title">
+                            Аудит СВК
+                        </h5>
+                    </div>
+                    <div class="pricing-body">
+                        <h3 class="title">
+                            От 250 000<span style="font-size:33px; margin-left:5px;">₽</span>
+                        </h3>
+                        <p class="disc">
+                            <!--                                Sodales curae dictum nisi duis purus sapien cum facilisi odio-->
+                        </p>
+                        Включает оценку
+                        <div class="feature-area">
+
+                            <div class="single-feature" style="display: block;">
+                                <div class="single-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Компонентов СВК: контрольной среды, оценки рисков, контрольных процедур, информации и коммуникаций, мониторинга</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span id="expandable-text-3">целей, достижение которых контролируется (операционные цели, цели в сфере подготовки отчетности, цели в области соблюдения законодательства)
+                                    <i id="arrow-icon-3" class="fas fa-chevron-down"></i></span>
+                                </div>
+                                <div id="expandable-content-3" style="display: none;">
+                                    <div class="single-feature">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>четырех организационных уровней (уровень функции (бизнес-процесса), уровень операционной единицы (подразделения), уровень дивизиона (направления бизнеса), уровень организации (группы))</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                            <a class="rts-btn btn-secondary" href="#">Get Started</a>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single pricing end -->
+            </div>
+            <div class="col-lg-4" id="audit6">
+                <!-- single pricing start -->
+                <div class="single-pricing-area-h2" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                    <div class="pricing-head">
+                        <h5 class="title">
+                            Кадровый аудит
+                        </h5>
+                    </div>
+                    <div class="pricing-body">
+                        <h3 class="title">
+                            От 1200<span style="font-size:35px; margin-left:5px;">₽</span>
+                        </h3>
+                        <p class="disc">
+                            <!--                                Sodales curae dictum nisi duis purus sapien cum facilisi odio-->
+                        </p>
+                        <div class="feature-area">
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Полный (1500<span style="font-size:16px; margin-left:3px;">₽</span> за 1 работника)</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Выборочный (1200<span style="font-size:16px; margin-left:3px;">₽</span> за 1 работника)</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Обзорный (от 60 000<span style="font-size:16px; margin-left:3px;">₽</span>)</span>
+                            </div>
+                        </div>
+                        <span style="font-size:15px;">Проводится с целью проверки системы кадрового документооборота на предмет:</span>
+                        <div class="feature-area">
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>наличия необходимых документов</span>
+                            </div>
+                            <div class="single-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span style="font-size:15px;">анализа документов на соответствие законодательству РФ</span>
+                            </div>
+                        </div>
+                        <!--                            <a class="rts-btn btn-secondary" href="#">Get Started</a>-->
+                    </div>
+                </div>
+                <!-- single pricing end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rts pricing area end -->
+
+<!-- start Footer area -->
+
+<!--    &lt;!&ndash; our brand area style two &ndash;&gt;-->
+<!--    <div class="rts-brand-area bg_brand&#45;&#45;two ptb&#45;&#45;100">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="brand-wrapper-two">-->
+<!--                        &lt;!&ndash; Swiper &ndash;&gt;-->
+<!--                        <div class="swiper brand-1">-->
+<!--                            <div class="swiper-wrapper">-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/06.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/07.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/08.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/09.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img class="mt-dec-brand" src="assets/images/brand/10.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/06.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/07.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/08.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/09.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img class="mt-dec-brand" src="assets/images/brand/10.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; swiper end &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; our brand area style two End &ndash;&gt;-->
+{% include 'consulting/clients.html' %}
+<!-- ENd Footer Area -->
+
+<script>
+    function toggleExpandableContent(id, arrowIconId) {
+        const expandableContent = document.getElementById(id);
+        const arrowIcon = document.getElementById(arrowIconId);
+
+        if (expandableContent.style.display === 'none' || expandableContent.style.display === '') {
+            arrowIcon.classList.remove('fa-chevron-down');
+            arrowIcon.classList.add('fa-chevron-up');
+            expandableContent.style.display = 'block';
+        } else {
+            arrowIcon.classList.remove('fa-chevron-up');
+            arrowIcon.classList.add('fa-chevron-down');
+            expandableContent.style.display = 'none';
+        }
+    }
+
+    document.getElementById('expandable-text-1').addEventListener('click', function() {
+        toggleExpandableContent('expandable-content-1', 'arrow-icon-1');
+    });
+
+    document.getElementById('expandable-text-2').addEventListener('click', function() {
+        toggleExpandableContent('expandable-content-2', 'arrow-icon-2');
+    });
+
+    document.getElementById('expandable-text-3').addEventListener('click', function() {
+        toggleExpandableContent('expandable-content-3', 'arrow-icon-3');
+    });
+
+
+</script>
+{% endblock %}

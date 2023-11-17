@@ -1,0 +1,186 @@
+{% extends 'consulting/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- start breadcrumb area -->
+    <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                    <h1 class="title" style="font-size: 60px;" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Контакты</h1>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="bread-tag">
+                        <a href="{% url 'consulting:index' %}" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Домой</a>
+                        <span> / </span>
+                        <a href="#" class="active" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcrumb area -->
+
+
+    <!-- contact single area start -->
+    <div class="rts-contact-area-page rts-section-gap">
+        <div class="container">
+            <div class="row g-5">
+                <!-- single contact area -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-contact-one-inner sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="thumbnail">
+<!--                            <img src="{% static 'assets/images/contact/01.png' %}" alt="">-->
+                        </div>
+                        <div class="content">
+                            <div class="icone">
+                                <img src="{% static 'assets/images/contact/shape/01.svg' %}" alt="">
+                            </div>
+                            <div class="info">
+                                <span>Мобильный номер:</span>
+                                <a href="tel:+18475555555">
+                                    <h5>8 (495) 504-86-40</h5>
+                                    <h5>8 (903) 281-04-20</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single contact area end -->
+                <!-- single contact area -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-contact-one-inner sal-animate" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                        <div class="thumbnail">
+<!--                            <img src="{% static 'assets/images/contact/02.png' %}" alt="">-->
+                        </div>
+                        <div class="content">
+                            <div class="icone">
+                                <img src="{% static 'assets/images/contact/shape/02.svg' %}" alt="">
+                            </div>
+                            <div class="info">
+                                <span>Ваши предложения:</span>
+                                <a href="#">
+                                    <h5>info@akfakademaudit.com</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single contact area end -->
+                <!-- single contact area -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-contact-one-inner sal-animate" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                        <div class="thumbnail">
+<!--                            <img src="{% static 'assets/images/contact/03.png' %}" alt="">-->
+                        </div>
+                        <div class="content">
+                            <div class="icone">
+                                <img src="{% static 'assets/images/contact/shape/03.svg' %}" alt="">
+                            </div>
+                            <div class="info">
+                                <span>Адрес компании:</span>
+                                <a href="#">
+                                    <h5>г.Москва, ул. Коштоянца, д.10</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single contact area end -->
+            </div>
+        </div>
+    </div>
+    <!-- conact single area end -->
+
+    <!-- conact us form fluid start -->
+    <div class="rts-contact-form-area">
+        <div class="container">
+            <div class="rts-contact-fluid rts-section-gap">
+                <div class="row mb--30">
+                    <div class="col-12">
+                        <div class="title-area text-center">
+                            <span data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"
+                                class="sal-animate">Связаться</span>
+                            <h2 class="title animated fadeIn sal-animate"  style="font-size: 34px;" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">Оставьте свои комментарии о работе нашей компании
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <div id="form-messages"></div>
+                    <form id="cf" action="{% url 'consulting:contact' %}" method="post">
+                        {% csrf_token %}
+                        <div class="name-email">
+<!--                            <input type="text" name="name" placeholder="Your Name" required>-->
+<!--                            <input type="email" name="email" placeholder="Email Address" required>-->
+                            {{ cf.name }}
+                            {{ cf.email }}
+                        </div>
+<!--                        <input type="text" name="subject" placeholder="Your Subject">-->
+                        {{ cf.subject }}
+<!--                        <textarea placeholder="Type Your Message" name="message"></textarea>-->
+                        {{ cf.text }}
+                        <button type="submit" class="rts-btn btn-primary" form="cf">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- conact us form fluid end -->
+
+    <!-- start Footer area -->
+
+<!--    &lt;!&ndash; our brand area style two &ndash;&gt;-->
+<!--    <div class="rts-brand-area bg_brand&#45;&#45;two ptb&#45;&#45;100">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="brand-wrapper-two">-->
+<!--                        &lt;!&ndash; Swiper &ndash;&gt;-->
+<!--                        <div class="swiper brand-1">-->
+<!--                            <div class="swiper-wrapper">-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/06.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/07.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/08.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/09.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img class="mt-dec-brand" src="assets/images/brand/10.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/06.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/07.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/08.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img src="assets/images/brand/09.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                                <div class="swiper-slide">-->
+<!--                                    <a href="#"><img class="mt-dec-brand" src="assets/images/brand/10.png" alt="Brand_area_images"></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; swiper end &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; our brand area style two End &ndash;&gt;-->
+{% include 'consulting/clients.html' %}
+    <!-- ENd Footer Area -->
+{% endblock %}
